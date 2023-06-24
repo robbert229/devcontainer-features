@@ -1,13 +1,14 @@
 
-# Hello, World! (hello)
+# Postgresql Client (postgresql-client)
 
+This feature adds the postgresql client (psql) to the devcontainer. 
 A hello world feature
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/feature-starter/hello:1": {
+    "ghcr.io/robbert229/devcontainer-features/postgresql-client:1": {
         "version": "latest"
     }
 }

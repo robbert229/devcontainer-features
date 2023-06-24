@@ -1,9 +1,9 @@
 {
-    "hello": {
+    "postgresql14": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
-            "hello": {
-                "greeting": "hello"
+            "postgresql-client": {
+                "version":"14"
             }
         }
     }

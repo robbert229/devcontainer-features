@@ -1,0 +1,21 @@
+{
+    "name": "PostgreSQL Client",
+    "id": "postgresql-client",
+    "version": "1.0.0",
+    "description": "A feature adding the postgrsql client cli",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "13",
+                "14",
+                "15"
+            ],
+            "default": "13",
+            "description": "Select the major version of postgres"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
