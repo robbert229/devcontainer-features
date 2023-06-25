@@ -1,9 +1,25 @@
 {
+    "postgresql13": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "postgresql-client": {
+                "version":"13"
+            }
+        }
+    },
     "postgresql14": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
             "postgresql-client": {
                 "version":"14"
+            }
+        }
+    },
+    "postgresql15": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "postgresql-client": {
+                "version":"15"
             }
         }
     }
