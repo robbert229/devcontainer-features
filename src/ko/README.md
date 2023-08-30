@@ -1,7 +1,7 @@
 
 # Ko (ko)
 
-This feature adds ko. Its a fork of the upstream https://github.com/devcontainers-contrib/features/tree/main/src/ko feature which at the time of writing is broken.
+This feature adds ko by downloading the binary directly from github.
 
 ## Example Usage
 
