@@ -15,6 +15,7 @@ jobs:
         features:
           - postgresql-client
           - ko
+          - opentofu
         baseImage:
           - debian:latest
           - ubuntu:latest
