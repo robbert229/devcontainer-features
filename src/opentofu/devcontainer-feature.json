@@ -1,0 +1,19 @@
+{
+    "name": "OpenTofu",
+    "id": "opentofu",
+    "version": "1.0.0",
+    "description": "OpenTofu is an infrastructure as code tool that lets you define both cloud and on-prem resources in human-readable configuration files that you can version, reuse, and share.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "1.6.0-alpha3"
+            ],
+            "default": "1.6.0-alpha3",
+            "description": "Select the version of opentofu"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
