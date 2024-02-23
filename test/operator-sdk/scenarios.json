@@ -1,0 +1,34 @@
+{
+    "operatorsdk-v1.30.0": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "operator-sdk": {
+                "version":"v1.30.0"
+            }
+        }
+    },
+    "operatorsdk-v1.31.0": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "operator-sdk": {
+                "version":"v1.31.0"
+            }
+        }
+    },
+    "operatorsdk-v1.32.0": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "operator-sdk": {
+                "version":"v1.32.0"
+            }
+        }
+    },
+    "operatorsdk-v1.33.0": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "operator-sdk": {
+                "version":"v1.33.0"
+            }
+        }
+    }
+}

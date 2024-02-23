@@ -1,0 +1,22 @@
+{
+    "name": "OperatorSDK",
+    "id": "operator-sdk",
+    "version": "1.0.0",
+    "description": "A feature adding [operator-sdk](https://sdk.operatorframework.io/), a component of the [Operator Framework](https://github.com/operator-framework), an open source toolkit to manage kubernetes operators.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "v1.33.0",
+                "v1.32.0",
+                "v1.31.0",
+                "v1.30.0"
+            ],
+            "default": "v1.33.0",
+            "description": "Select the version of operator-sdk to install"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
