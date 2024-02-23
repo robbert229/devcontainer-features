@@ -2,7 +2,7 @@
     "name": "OperatorSDK",
     "id": "operator-sdk",
     "version": "1.0.0",
-    "description": "A feature adding [operator-sdk](https://sdk.operatorframework.io/), a component of the [Operator Framework](https://github.com/operator-framework), an open source toolkit to manage kubernetes operators.",
+    "description": "The Operator SDK provides the tools to build, test, and package Operators.",
     "options": {
         "version": {
             "type": "string",
