@@ -6,7 +6,17 @@ set -ex
 
 TARGET_TOFU_VERSION="${VERSION:-"1.6.0-alpha3"}"
 OS="linux"     # or Darwin
-ARCH="amd64"  # or arm64, i386, s390x
+architecture="$(uname -m)"
+case ${architecture} in
+x86_64) architecture="amd64" ;;
+aarch64 | armv8*) architecture="arm64" ;;
+aarch32 | armv7* | armvhf*) architecture="arm" ;;
+i?86) architecture="386" ;;
+*)
+	echo "(!) Architecture ${architecture} unsupported"
+	exit 1
+	;;
+esac
 
 # Clean up
 rm -rf /var/lib/apt/lists/*
@@ -74,7 +84,7 @@ check_packages curl gpg ca-certificates unzip
 
 . /etc/os-release
 
-curl -sSfL "https://github.com/opentofu/opentofu/releases/download/v${TARGET_TOFU_VERSION}/tofu_${TARGET_TOFU_VERSION}_${OS}_${ARCH}.zip" > tofu.zip
+curl -sSfL "https://github.com/opentofu/opentofu/releases/download/v${TARGET_TOFU_VERSION}/tofu_${TARGET_TOFU_VERSION}_${OS}_${architecture}.zip" > tofu.zip
 unzip tofu.zip tofu
 chmod +x ./tofu
 install ./tofu /usr/local/bin/tofu
