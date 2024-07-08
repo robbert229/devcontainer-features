@@ -1,7 +1,7 @@
 
 # OperatorSDK (operator-sdk)
 
-A feature adding [operator-sdk](https://sdk.operatorframework.io/), a component of the [Operator Framework](https://github.com/operator-framework), an open source toolkit to manage kubernetes operators.
+The Operator SDK provides the tools to build, test, and package Operators.
 
 ## Example Usage
 
