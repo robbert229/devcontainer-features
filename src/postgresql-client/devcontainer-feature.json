@@ -9,7 +9,8 @@
             "proposals": [
                 "13",
                 "14",
-                "15"
+                "15",
+                "16"
             ],
             "default": "13",
             "description": "Select the major version of postgres"
